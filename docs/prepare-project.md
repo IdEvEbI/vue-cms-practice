@@ -85,3 +85,93 @@
   // 导入全局样式
   import '@/styles/global.css'
   ```
+
+## 三. 引入 Element UI 组件库
+
+官方文档：<https://element.eleme.io/#/zh-CN>
+
+在实际开发中可以全部引入整个 Element，也可以根据需要仅引入部分组件，其中：
+
+- **全部引入**（不推荐使用）会引入所有的组件，使用方便，但是将来打包的体积会大
+- **按需引入**（推荐使用）只引入项目中需要的组件，将来打包的体积会小，需要借助 [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component)
+
+### 3.1 全部引入（不推荐）
+
+1. 安装
+
+   ```bash
+   yarn add element-ui
+   ```
+
+2. 修改 `main.js` 引入 ElementUI，代码如下：
+
+   ```js
+   // 引入 ElementUI
+   import ElementUI from 'element-ui'
+   import 'element-ui/lib/theme-chalk/index.css'
+
+   Vue.use(ElementUI)
+   ```
+
+3. 修改 `App.vue` 增加测试按钮，代码如下：
+
+   ```js
+   <el-button type="primary">点我啊</el-button>
+   ```
+
+### 3.2 按需引入
+
+1. 安装
+
+   ```bash
+   yarn add element-ui
+   yarn add babel-plugin-component -D
+   ```
+
+2. 修改 `babel.config.js` 配置如下：
+
+   ```js
+   module.exports = {
+     presets: [
+       '@vue/cli-plugin-babel/preset'
+     ],
+     plugins: [
+       [
+         'component',
+         {
+           libraryName: 'element-ui',
+           styleLibraryName: 'theme-chalk'
+         }
+       ]
+     ]
+   }
+   ```
+
+3. 新建 `utils/element.js` 并实现以下代码：
+
+   ```js
+   import Vue from 'vue'
+   // 按需导入组件
+   import { Button, Link } from 'element-ui'
+   
+   // 注册全局组件
+   Vue.use(Button).use(Link)
+   ```
+
+4. 修改 `main.js` 直接导入 `/utils/element.js`，代码如下：
+
+   ```js
+   // 导入 element.js
+   import '@/utils/element'
+   import 'element-ui/lib/theme-chalk/index.css'
+   ```
+
+5. 修改 `App.vue` 增加测试按钮和，代码如下：
+
+   ```js
+   <el-button type="primary">按需引入按钮</el-button>
+   <el-link
+     type="info"
+     href="https://www.baidu.com"
+     target="_blank">链接文字</el-link>
+   ```

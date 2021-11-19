@@ -4,6 +4,9 @@ import router from './router'
 import store from './store'
 // 导入全局样式
 import '@/styles/global.css'
+// 导入 element.js
+import '@/utils/element'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
 
