@@ -151,6 +151,8 @@
 
    ```js
    import Vue from 'vue'
+   // 导入 element-ui 样式
+   import 'element-ui/lib/theme-chalk/index.css'
    // 按需导入组件
    import { Button, Link } from 'element-ui'
    
@@ -163,7 +165,6 @@
    ```js
    // 导入 element.js
    import '@/utils/element'
-   import 'element-ui/lib/theme-chalk/index.css'
    ```
 
 5. 修改 `App.vue` 增加测试按钮和，代码如下：
