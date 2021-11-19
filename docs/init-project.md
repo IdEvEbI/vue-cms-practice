@@ -62,7 +62,7 @@
 
 ## 三. 推送到 GitHub 代码仓库
 
-在终端输入如下命令将项目推送到 **GitHub**（**提示**：需要提前在 GitHub 上建好空仓库）：
+在终端输入如下命令将项目推送到 **GitHub**：
 
 ```bash
 # 进入项目目录
@@ -80,3 +80,5 @@ git push -u origin main
 # 配置项目拉取策略
 git config pull.rebase true
 ```
+
+> Tips：需要提前在 GitHub 上建好空仓库。
