@@ -48,7 +48,7 @@
       ![选择 less 预处理器](assets/05-selected-less.png)
 
    6. 选择 **ESLint + 标准配置**，如下图：
-      ![选择 eslint + standard 配置](assets/   06-selected-eslint-standard-config.png)
+      ![选择 eslint + standard 配置](assets/06-selected-eslint-standard-config.png)
 
    7. 选择**在保存文件时启用代码规范检测**，如下图：
       ![保存文件时 lint](assets/07-selected-lint-on-save.png)
@@ -89,7 +89,7 @@ git config pull.rebase true
 
 ### 3.2 安装 commitizen
 
-1. 在终端输入如下命令安装 **commitizen** 和 **cz-conventional-changelog**
+1. 在终端输入如下命令安装 **commitizen** 和 **cz-conventional-changelog**：
 
    ```bash
    yarn add commitizen cz-conventional-changelog -D
