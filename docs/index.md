@@ -6,3 +6,4 @@
 
 1. [创建 CMS 项目](create-project.md)
 2. [准备 CMS 项目](prepare-project.md)
+3. [登录 & 注册](login-register.md)

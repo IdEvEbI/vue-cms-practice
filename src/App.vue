@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view />
     <h1>Hello Vue</h1>
+    <router-view />
     <el-button type="primary">按需引入按钮</el-button>
     <el-link
       type="info"

@@ -33,8 +33,8 @@
    ```vue
    <template>
      <div id="app">
-       <router-view />
        <h1>Hello Vue</h1>
+       <router-view />
      </div>
    </template>
 
