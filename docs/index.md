@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
+
+[点击测试](init-project.md)
 
 You can use the [editor on GitHub](https://github.com/IdEvEbI/vue-cms-practice/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
