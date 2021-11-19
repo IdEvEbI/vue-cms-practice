@@ -1,4 +1,6 @@
-# 项目准备
+# 创建 CMS 项目
+
+> 目标：使用 Vue CLI 创建项目并推送到 GitHub 代码仓库。
 
 ## 一. 环境准备
 
@@ -62,6 +64,8 @@
 
 ## 三. 推送到 GitHub 代码仓库
 
+### 3.1 推送到 GitHub 代码仓库
+
 在终端输入如下命令将项目推送到 **GitHub**：
 
 ```bash
@@ -82,3 +86,34 @@ git config pull.rebase true
 ```
 
 > Tips：需要提前在 GitHub 上建好空仓库。
+
+### 3.2 安装 commitizen
+
+1. 在终端输入如下命令安装 **commitizen** 和 **cz-conventional-changelog**
+
+   ```bash
+   yarn add commitizen cz-conventional-changelog -D
+   ```
+
+2. 在 `package.json` 的 `scripts` 中增加 `commit` 命令，代码如下：
+
+   ```json
+   "scripts": {
+     "serve": "vue-cli-service serve",
+     "build": "vue-cli-service build",
+     "lint": "vue-cli-service lint",
+     "commit": "git-cz"
+   },
+   ```
+
+3. 在 `package.json` 中增加 `config` 配置，代码如下：
+
+   ```json
+   "config": {
+     "commitizen": {
+       "path": "node_modules/cz-conventional-changelog"
+     }
+   }
+   ```
+
+> 有关 git 提交规范请参阅：<https://www.cnblogs.com/anly95/p/13163384.html>。
