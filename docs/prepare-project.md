@@ -73,7 +73,6 @@
 
    ```json
    "path-intellisense.mappings": {
-     // 将 @ 映射到工作目录的 src 文件夹
      "@": "${workspaceFolder}/src"
    }
    ```

@@ -103,7 +103,7 @@ git config pull.rebase true
      "build": "vue-cli-service build",
      "lint": "vue-cli-service lint",
      "commit": "git-cz"
-   },
+   }
    ```
 
 3. 在 `package.json` 中增加 `config` 配置，代码如下：
