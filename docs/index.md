@@ -4,5 +4,5 @@
 
 文档目录：
 
-1. [创建 CMS 项目](init-project.md)
+1. [创建 CMS 项目](create-project.md)
 2. [准备 CMS 项目](prepare-project.md)

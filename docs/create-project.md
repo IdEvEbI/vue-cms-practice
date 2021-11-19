@@ -62,6 +62,8 @@
 3. 等待脚手架安装项目，完成后的界面效果如下图所示：
    ![项目安装完成](assets/10-created-project-finished.png)
 
+> 有关 **JavaScript Standard Style** 请参阅：<https://standardjs.com/rules-zhcn.html>。
+
 ## 三. 推送到 GitHub 代码仓库
 
 ### 3.1 推送到 GitHub 代码仓库
